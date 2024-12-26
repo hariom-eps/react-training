@@ -14,6 +14,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import ToastExamplePage from './pages/ToastExamplePage';
 import CustomLoader from './components/CustomLoader';
 import EventsPhotoUploadPage from './pages/EventsPhotoUploadPage';
+
+// Add Eslint disable syntax here...
+
 function App() {
   return (
     <div className="App">
@@ -23,7 +26,7 @@ function App() {
             <Route path='/' element={<HomePage />} />
             <Route path='/reports' element={<ReportsPage />} />
             <Route path='/payments' element={<PaymentsPage />} />
-            <Route path='/orders' element={<OrderPage/>} />
+            <Route path='/orders' element={<OrderPage />} />
             <Route path='/users' element={<UsersPage />} />
             <Route path='/events' element={<EventsPage />} />
             <Route path='/events-photo-upload/:id' element={<EventsPhotoUploadPage />} />
@@ -32,7 +35,6 @@ function App() {
             <Route path='*' element={<NotFoundPage />} />
           </Route>
           <Route path='/login' element={<LoginPage />} />
-
         </Routes>
       </BrowserRouter>
       <CustomLoader />
